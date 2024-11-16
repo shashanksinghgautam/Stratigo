@@ -24,6 +24,9 @@ dist-ssr
 *.sw?
 
 **/migrations/
+**/__pycache__/
+**/.venv/
+**/.vite/
 **/node_modules/
 **/package-lock/
 **/.env/
