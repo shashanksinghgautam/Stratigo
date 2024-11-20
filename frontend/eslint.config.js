@@ -33,8 +33,10 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      "no-unused-vars": ["warn"],
-      "no-prop-validation": false
+      'no-unused-vars': ['warn'],
+      'no-prop-validation': ['warn'], 
+      'no-unescaped-entities': ['off'],
+      'no-undef':["error"],
     },
   },
 ]

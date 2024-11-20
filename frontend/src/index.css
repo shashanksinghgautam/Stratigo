@@ -27,7 +27,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -53,7 +53,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {
@@ -62,13 +62,40 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 }
 
 .dotted-background {
   background-color: #0a111f;
-  background-image: radial-gradient(#4a5568 1px, transparent 1px);
+  background-image: radial-gradient(#5a4919 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
+@layer utilities {
+  .gradient-title {
+    @apply font-extrabold bg-gradient-to-br from-blue-500 via-blue-100 to-blue-400 bg-clip-text tracking-tighter text-transparent pr-2 pb-2;
+  }
+}
+
+@keyframes login-icon-slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-in-button {
+  animation: login-icon-slideIn 2s infinite ease-in-out;
+}
+
+.light-theme {
+  background-color: #ffffff; /* Example light background */
+  color: #000000; /* Example light text */
+  /* Add other CSS variables here to override dark theme styles */
+}

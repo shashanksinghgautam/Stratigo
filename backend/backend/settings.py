@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL backend
-        'NAME': 'stratigodb',                       # Your new database name
+        'NAME': 'trakz_db',                       # Your new database name
         'USER': 'postgres',                       # Your new database user
         'PASSWORD': 'admin',                 # Your new user's password
         # Database host (use 'localhost' for local)
